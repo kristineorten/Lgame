@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/conLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TwoPlayerActivity">
+
+    <ImageButton
+        android:id="@+id/backArrow3"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:background="@android:color/white"
+        android:onClick="goToMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/homeAsUpIndicator" />
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/border_thick"
+        android:padding="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/square00"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square10"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square20"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square30"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/square01"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square11"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square21"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square31"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/square02"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value"
+                tools:layout_editor_absoluteX="41dp" />
+
+            <Button
+                android:id="@+id/square12"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value"
+                tools:layout_editor_absoluteX="129dp" />
+
+            <Button
+                android:id="@+id/square22"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square32"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/square03"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value"
+                tools:layout_editor_absoluteX="57dp" />
+
+            <Button
+                android:id="@+id/square13"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square23"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+
+            <Button
+                android:id="@+id/square33"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="@dimen/squareSize"
+                android:layout_height="@dimen/squareSize"
+                android:background="@drawable/border_thin"
+                android:onClick="btnClicked"
+                android:text="@string/square_value" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:onClick="doneClicked"
+        android:text="@string/DonePickingNewPos"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout">
+
+        <TextView
+            android:id="@+id/playersTurn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="WhoMoves"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/helpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:text="HelpText"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
